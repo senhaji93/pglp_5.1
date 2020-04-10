@@ -5,6 +5,7 @@ package uvsq.senhaji.abdellatif;
  *
  */
 
+
 public interface Composite {
 	
 	public void print();

@@ -7,6 +7,5 @@ package uvsq.senhaji.abdellatif;
 public enum Type_tel {
   fix_perso,
    fix_pro,
- 
    portable;
 }

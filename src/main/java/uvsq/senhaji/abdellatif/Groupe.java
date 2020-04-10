@@ -89,6 +89,7 @@ public class Groupe implements Composite, Serializable {
    
 	 public String getNom() {
 	        return this.nom;
+
 	    }
 	  
 	    public int size() {
