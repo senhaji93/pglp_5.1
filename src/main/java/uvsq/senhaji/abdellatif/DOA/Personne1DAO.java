@@ -10,6 +10,10 @@ import uvsq.senhaji.abdellatif.Personne;
 
 public class Personne1DAO extends DAO<Personne> implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public Personne1DAO(final int id) throws IOException {
 		super(id);
 	}
@@ -42,5 +46,8 @@ public class Personne1DAO extends DAO<Personne> implements Serializable {
         System.out.println(personne.toString());
         return personne;
 	}
+
+
+
 	
 }

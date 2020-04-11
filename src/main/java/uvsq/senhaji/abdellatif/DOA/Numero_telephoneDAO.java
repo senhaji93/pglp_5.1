@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
+
 import uvsq.senhaji.abdellatif.Numero_telephone;
 
 public class Numero_telephoneDAO extends DAO<Numero_telephone> {
@@ -42,5 +43,7 @@ public class Numero_telephoneDAO extends DAO<Numero_telephone> {
 	public void delete(final Numero_telephone obj) {
 		fichier.delete();
 	}
+
+	
 
 }

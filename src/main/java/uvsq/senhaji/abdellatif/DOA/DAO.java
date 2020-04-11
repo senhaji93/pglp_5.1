@@ -4,6 +4,8 @@ package uvsq.senhaji.abdellatif.DOA;
 import java.io.*;
 import java.io.IOException;
 
+
+
 public abstract class DAO<T> {
 
 	protected File fichier;
@@ -19,30 +21,6 @@ public abstract class DAO<T> {
     }
   
 	public abstract T create(T obj) throws IOException;
-
-	public File getFichier() {
-		return fichier;
-	}
-
-	public void setFichier(File fichier) {
-		this.fichier = fichier;
-	}
-
-	public FileOutputStream getFichout() {
-		return fichout;
-	}
-
-	public void setFichout(FileOutputStream fichout) {
-		this.fichout = fichout;
-	}
-
-	public ObjectOutputStream getObjetout() {
-		return objetout;
-	}
-
-	public void setObjetout(ObjectOutputStream objetout) {
-		this.objetout = objetout;
-	}
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
@@ -76,10 +54,9 @@ public abstract class DAO<T> {
 
 	public abstract T find(String id) throws IOException, ClassNotFoundException;
 	
-	
+	public abstract T update(T obj) throws IOException;
 
 	public abstract void delete(T obj);
-	public abstract T update(T obj) throws IOException;
 	
     public Object deserialize(final byte[] bytes)
     		throws ClassNotFoundException, IOException {
@@ -94,4 +71,6 @@ public abstract class DAO<T> {
 	        ob.writeObject(obj);
 	        return tab.toByteArray();
 	    }
+
+
 }
